@@ -2,7 +2,7 @@
 	"name": "react-terminal-portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://shloksomani.github.io/react-terminal-portfolio",
+	"homepage": "http://erayozd.github.io/portfolio",
 	"dependencies": {
 		"react": "^16.11.0",
 		"react-dom": "^16.11.0",
@@ -32,6 +32,6 @@
 		]
 	},
 	"devDependencies": {
-		"gh-pages": "^2.2.0"
+		"gh-pages": "^2.1.1"
 	}
 }

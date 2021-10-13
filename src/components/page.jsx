@@ -8,7 +8,7 @@ export class Page extends Component {
 		displayEverything: [{ value: "", id: 0, displayInput: true, type: "line" }]
 	};
 	information = {
-		name: "dummy_name",
+		name: "Eray Özdayıoğlu",
 		commands: [
 			{
 				id: 10,
@@ -30,23 +30,23 @@ export class Page extends Component {
 		subDir: [
 			{
 				id: 14,
-				type: "About.txt"
+				type: "about.txt"
 			},
 			{
 				id: 15,
-				type: "Education.txt"
+				type: "education.txt"
 			},
 			{
 				id: 16,
-				type: "Projects.txt"
+				type: "projects.txt"
 			},
 			{
 				id: 17,
-				type: "Socials.txt"
+				type: "socials.txt"
 			},
 			{
 				id: 18,
-				type: "Contact_Me.txt"
+				type: "contact_me.txt"
 			}
 		]
 	};

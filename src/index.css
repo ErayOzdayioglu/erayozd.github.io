@@ -130,11 +130,9 @@ code {
 }
 
 a {
-	color: white;
+	color: #1ff042;
 	text-decoration: none;
-	-webkit-animation: cursor-blink 1.5s steps(1) infinite;
-	-moz-animation: cursor-blink 1.5s steps(1) infinite;
-	animation: cursor-blink 1.5s steps(1) infinite;
+	
 	display: inline-block;
 	padding: 25px;
 }

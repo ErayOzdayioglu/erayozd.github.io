@@ -14,30 +14,42 @@ export class Cat extends Component {
 
 	information = {
 		about:
-			"Aute voluptate qui eiusmod pariatur velit velit fugiat laborum irure veniam. Id labore proident mollit nostrud. Aliqua excepteur Lorem in duis.",
+			"Computer Science Student who is interested in Software Development and Cloud Computing. Trying to draw a career path with Java technologies and Back-end Development. I am also a licensed football referee at TFF",
 		education:
-			"Quis ut voluptate irure est. Ex in velit nisi nostrud occaecat ipsum non quis ea. Ipsum deserunt est amet adipisicing sint nulla quis nostrud. Ullamco enim do incididunt amet elit qui sint excepteur sit irure elit reprehenderit qui excepteur. Laborum ea minim aliquip et laboris aliquip reprehenderit sunt cupidatat pariatur esse do. In sint magna laborum culpa officia cillum ex velit commodo. Laborum adipisicing laboris incididunt nulla aliquip.",
+			"Başiskele Anatolian Hig School: 2013-2017              Özyeğin University / Computer Science : 2017-2022",
 		projects: [
 			{
-				projectName: "p1",
-				liveDemo: "https://github.com/shloksomani",
-				linkToGithub: "https://github.com/shloksomani"
+				projectName: "Bank Spring Boot",
+				linkToGithub: "https://github.com/ErayOzdayioglu/BankSpringBoot"
 			},
 			{
-				projectName: "p2",
-				liveDemo: "https://github.com/shloksomani",
-				linkToGithub: "https://github.com/shloksomani"
-			}
+				projectName: "Rakoon E-Commerce (Blockchain Payment)",
+				linkToGithub: "https://github.com/ErayOzdayioglu/RakoonV2"
+			},
+			{
+				projectName: "Restaurant Managament System",
+				linkToGithub: "https://github.com/ErayOzdayioglu/RestaurantManagementSystem"
+			},
+			{
+				projectName: "La Marmotte",
+				linkToGithub: "https://github.com/ErayOzdayioglu/La_Marmotte"
+			},
+
+
 		],
 		social: [
 			{
-				platform: "Github",
-				link: "https://github.com/shloksomani"
+				platform: "Linkedin",
+				link: "https://www.linkedin.com/in/eray-ozdayioglu/"
 			},
 
 			{
 				platform: "Github",
-				link: "https://github.com/shloksomani"
+				link: "https://github.com/ErayOzdayioglu"
+			},
+			{
+				platform: "Twitter",
+				link:"https://twitter.com/eozdd"
 			}
 		]
 	};
@@ -54,21 +66,19 @@ export class Cat extends Component {
 		const navigation = this.state.value.split(" ")[1];
 		if (navigation) {
 			const lower = navigation.toLowerCase();
-			if (lower === "about") {
+			if (lower === "about.txt") {
 				return <p className="result">{this.information.about}</p>;
-			} else if (lower === "education") {
+			} else if (lower === "education.txt") {
 				return <p className="result">{this.information.education}</p>;
 			} else if (lower === "education") {
-			} else if (lower === "projects" || lower === "project") {
+			} else if (lower === "projects.txt" || lower === "project.txt") {
 				return (
 					<React.Fragment>
 						{this.information.projects.map(everyProject => {
 							return (
 								<p className="result">
 									{everyProject.projectName}
-									<a href={everyProject.liveDemo} target="_blank">
-										Live Link
-									</a>
+								
 									<a href={everyProject.linkToGithub} target="_blank">
 										<img src={githubLogo} alt="GithubLink to Code" />
 									</a>
@@ -78,11 +88,9 @@ export class Cat extends Component {
 					</React.Fragment>
 				);
 			} else if (
-				lower === "socials" ||
-				lower === "social" ||
-				lower === "contact me" ||
-				lower === "contactme" ||
-				lower === "contact_me"
+				lower === "socials.txt" ||
+				lower === "social.txt"
+				
 			) {
 				return (
 					<React.Fragment>
@@ -92,15 +100,28 @@ export class Cat extends Component {
 									<a href={everySocial.link} target="_blank">
 										{everySocial.platform}
 									</a>
-									<a href="https://github.com/shloksomani" target="_blank">
-										<img src={githubLogo} alt="GithubLink to Code" />
-									</a>
+
 								</p>
 							);
 						})}
 					</React.Fragment>
 				);
-			} else {
+			}
+			else if (
+			lower === "contactme.txt" ||
+			lower === "contact_me.txt") {
+				return (
+					<React.Fragment>
+							<p className="result">
+									<a href="mailto:eray.ozdayioglu@ozu.edu.tr" target="_blank">
+										Email : eray.ozdayioglu@ozu.edu.tr
+									</a>
+									
+								</p>
+					</React.Fragment>
+				);
+			}
+			 else {
 				return <p className="result">Opps wrong input</p>;
 			}
 		} else {
