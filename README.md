@@ -1,13 +1,14 @@
-## React-terminal-portfolio  
+## React-terminal-portfolio
+
 Minimal Portfolio template for Developers built with React. Use it to showcase your work, testimonials and other information to clients.
-If you like it give it a :star: 
+
 ## Preview
 
 ![](react-terminal.gif)
 
 ## Code
 
-The code for this project is in the code-react-terminal branch. For deploying your react-app to GitHub pages follow this link - [Deploy-to-github-pages](https://reactgo.com/deploy-react-app-github-pages/)
+The code for this project is in the react-terminal-code branch for deploying your react-app to GitHub pages follow this link - [Deploy-to-github-pages](https://reactgo.com/deploy-react-app-github-pages/)
 
 ## Installation
 
@@ -31,13 +32,6 @@ If you already have a GitHub profile (obviously)
 Voila! Your site should be live at https://{username}.github.io
 
 Here's is a **dummy Landing Page** - [react portfolio](https://shloksomani.github.io/react-terminal-portfolio/)
-
-## Todo
-- Have the arrow functionality so that user can cycle through prev commands 
-- Tab auto complete 
-- Giving unique id's to list elements and removing the hard coded one 
-- Change the theme on user commands  
-- A card like structure for diffrent projects and education 
 
 ## Licence
 
